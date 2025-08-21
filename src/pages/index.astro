@@ -5,13 +5,18 @@ import Navbar from '../components/Navbar.astro';
 import ExperienciaLaboral from '../components/ExperienciaLaboral.astro';
 import Proyectos from '../components/Proyectos.astro';
 import Grid from  '../components/Grid.astro';
+import Yo from '../components/Yo.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <Layout description="Portafolio web creado para mostrar mis habilidades en el mundo de la techologia y la arquitectura">
 	<Navbar/>
+	<Yo name="Johan Mancebo" title="Fundador y CEO de JoSoftSolutiom" />
+    <main class="container mx-auto p-8">
+      <h2 class="text-white text-2xl mt-8">Experiencia de trabajo</h2>
 	<ExperienciaLaboral/>
 	<Grid/>
     <Proyectos/>
-
+	 <Footer/>
 	
 </Layout>
