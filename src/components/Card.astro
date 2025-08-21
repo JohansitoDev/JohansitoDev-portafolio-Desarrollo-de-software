@@ -1,0 +1,11 @@
+---
+const { imageUrl, text } = Astro.props;
+---
+<div class="flex flex-col md:flex-row items-center justify-center p-4">
+  <div class="w-full md:w-1/2">
+    <img src={imageUrl} alt={text} class="rounded-lg w-full h-auto" />
+  </div>
+  <div class="w-full md:w-1/2 p-4 text-white text-center md:text-left">
+    <p class="text-lg font-semibold">{text}</p>
+  </div>
+</div>

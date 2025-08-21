@@ -1,0 +1,20 @@
+---
+import Card from './Card.astro';
+
+const cards = [
+  { imageUrl: '/img/ciberseguridad.png', text: 'Ciberseguridad' },
+  { imageUrl: '/img/diseno.png', text: 'Diseño (UI/UX, Gráfico, de Interiores)' },
+  { imageUrl: '/img/videojuegos.png', text: 'Desarrollo de videojuego' },
+  { imageUrl: '/img/realidad-aumentada.png', text: 'Desarrollo AR' },
+  { imageUrl: '/img/desarrollo-movil.png', text: 'Desarrollo Móvil' },
+  { imageUrl: '/img/backend.png', text: 'Desarrollo Backend' },
+  { imageUrl: '/img/analisis-datos.png', text: 'Análisis de Datos' },
+  { imageUrl: '/img/frontend.png', text: 'Desarrollo Frontend' },
+  { imageUrl: '/img/fullstack.png', text: 'Proyecto de pila completa' },
+];
+---
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
+  {cards.map(card => (
+    <Card imageUrl={card.imageUrl} text={card.text} />
+  ))}
+</div>
