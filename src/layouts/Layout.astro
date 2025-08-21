@@ -1,3 +1,9 @@
+---
+import Footer from '../components/Footer.astro';
+description: Text;
+
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -5,10 +11,12 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>JohansitoDev Portafolio web</title>
 	</head>
 	<body>
 		<slot />
+      <Footer/>
+	  <script src="https://cdn.tailwindcss.com"></script>
 	</body>
 </html>
 
@@ -18,5 +26,6 @@
 		margin: 0;
 		width: 100%;
 		height: 100%;
+		background-color:#040832;
 	}
 </style>
